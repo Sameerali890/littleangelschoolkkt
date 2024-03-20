@@ -10,7 +10,7 @@
         </div>
 
         <div class="right">
-            <img class="object-cover" src="/src/assets/cover photo.jpg" alt="">
+            <img class="object-cover" src="/images/cover-photo2.jpg" alt="">
         </div>
     </div>
 </template>

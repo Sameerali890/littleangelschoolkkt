@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Allerta';
+}
+
+:root {
+    --primary: #1f3832;
+}
+
+body {
+    @apply bg-amber-100;
+}
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.border-primary {
+    border-color: var(--primary);
+}

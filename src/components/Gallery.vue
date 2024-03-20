@@ -1,0 +1,49 @@
+<script setup>
+import { Icon } from '@iconify/vue';
+import { ref } from 'vue'
+const currentImage = ref("");
+</script>
+
+<template>
+    <section class="max-w-[1400px] mx-auto py-16">
+        <div class="heading">Gallery</div>
+        <img @click="currentImage = $event.target.src" v-for="image in 6" :src="'/images/'+image+'.jpg'" alt="">
+    </section>
+
+    <div v-if="currentImage" class="model"  @click="currentImage=''">
+        <Icon @click="currentImage=''" icon="humbleicons:times" class="absolute top-6 right-6 text-white text-4xl cursor-pointer hover:text-red-500" />
+        <img @click="$event.stopPropagation()" :src="currentImage">
+    </div>
+</template>
+
+<style scoped>
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 32px;
+}
+    section img {
+        @apply  rounded-md hover:scale-105 duration-300;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        border: 8px solid white;
+        box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .heading {
+        grid-column: 1/-1;
+        text-align: center;
+        @apply text-4xl mb-2 font-[700];
+        color: var(--primary);
+    }
+
+    .model {
+        @apply fixed inset-0 bg-black/90 grid place-items-center;
+    }
+
+    .model img {
+        max-width: 1000px;
+        aspect-ratio: 7/5;
+        margin: 0 auto;
+    }
+</style>

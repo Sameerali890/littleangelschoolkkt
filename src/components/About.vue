@@ -5,7 +5,7 @@
 <template>
     <div class="grid grid-cols-2 py-20 max-w-[1400px] mx-auto">
         <div class="px-4">
-            <img class="h-[400px] w-[600px] rounded-lg object-cover " src="/src/assets/cover photo2.jpg" alt="">
+            <img class="h-[400px] w-[600px] rounded-lg object-cover " src="/images/2.jpg" alt="">
         </div>
         <div class="grid place-items-center">
             <div class="grid content-center max-w-xl text-primary">

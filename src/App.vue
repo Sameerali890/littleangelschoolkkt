@@ -4,6 +4,7 @@ import Admission from './components/Admission.vue';
 import Footer from './components/Footer.vue';
 import Gallery from './components/Gallery.vue';
 import Home from './components/Home.vue';
+import Location from './components/Location.vue';
 import NavBar from './components/NavBar.vue'
 
 
@@ -15,6 +16,7 @@ import NavBar from './components/NavBar.vue'
 <About />
 <Gallery />
 <Admission />
+<Location />
 <Footer />
 </template>
 

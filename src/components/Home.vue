@@ -1,6 +1,5 @@
 <template>
     <div class="grid grid-cols-2">
-
         <div class="grid bg-primary place-items-center">
             <div  class="max-w-[550px] text-amber-50">
                 <div class="text-6xl mb-4 font-[600] leading-[1.1]">Allamal insana malam yalam.</div>

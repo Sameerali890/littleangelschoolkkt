@@ -3,12 +3,11 @@ import { Icon } from "@iconify/vue";
 </script>
 
 <template>
-    <div class="bg-primary border-t border-amber-100">
-        <div class="grid grid-cols-2 py-16 max-w-[1400px] mx-auto">
-            <div class="px-4">
+    <div id="contact" class="bg-primary border-t border-amber-100">
+        <div class="grid sm:grid-cols-2 py-16 max-w-[1400px] mx-auto">
+            <div class="px-6 max-sm:mb-8">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14387.971823662005!2d82.9124961!3d25.6383593!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3991d2d6a89661f1%3A0xb7e15e926c4e6aec!2sLittle%20Angel%20School!5e0!3m2!1sen!2sin!4v1711015355157!5m2!1sen!2sin"
-                    width="600" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14387.971823662005!2d82.9124961!3d25.6383593!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3991d2d6a89661f1%3A0xb7e15e926c4e6aec!2sLittle%20Angel%20School!5e0!3m2!1sen!2sin!4v1711015355157!5m2!1sen!2sin" height="300" style="border: 0" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="grid place-items-center">
@@ -26,3 +25,9 @@ import { Icon } from "@iconify/vue";
         </div>
     </div>
 </template>
+
+<style scoped>
+ iframe {
+    width: min(600px, 100%);
+ }
+</style>

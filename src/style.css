@@ -12,9 +12,11 @@
     --primary: #1f3832;
 }
 
+html,body {
+    scroll-behavior: smooth;
+}
 body {
     @apply bg-amber-100;
-    scroll-behavior: smooth;
 }
 
 .bg-primary {

@@ -5,7 +5,7 @@ const currentImage = ref("");
 </script>
 
 <template>
-    <section class="max-w-[1400px] mx-auto py-16">
+    <section id="gallery" class="gap-4 sm:gap-8 max-w-[1400px] mx-auto pt-4 pb-8 lg:py-16">
         <div class="heading">Gallery</div>
         <img @click="currentImage = $event.target.src" v-for="image in 6" :src="'/images/'+image+'.jpg'" alt="">
     </section>
@@ -19,8 +19,8 @@ const currentImage = ref("");
 <style scoped>
 section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 32px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    padding-inline: 16px;
 }
     section img {
         @apply  rounded-md hover:scale-105 duration-300;
@@ -33,7 +33,7 @@ section {
     .heading {
         grid-column: 1/-1;
         text-align: center;
-        @apply text-4xl mb-2 font-[700];
+        @apply text-4xl mb-4 font-[700];
         color: var(--primary);
     }
 

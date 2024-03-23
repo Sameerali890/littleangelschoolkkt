@@ -16,7 +16,7 @@ import { Icon } from '@iconify/vue';
             <div class="flex items-center gap-4 sm:gap-12 max-sm:flex-wrap justify-center">
                 <div class="flex items-center gap-2">
                     <icon icon="ri:facebook-box-fill" />
-                    <a href="http://facebook.com">Facebook</a>
+                    <a href="https://www.facebook.com/littleangelschoolkkt">Facebook</a>
                 </div>
                 <div class="flex items-center gap-2">
                     <icon icon="teenyicons:instagram-outline" />

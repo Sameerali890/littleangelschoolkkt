@@ -10,7 +10,7 @@ const currentImage = ref("");
         <img @click="currentImage = $event.target.src" v-for="image in 6" :src="'/images/'+image+'.jpg'" alt="">
     </section>
 
-    <div v-if="currentImage" class="model"  @click="currentImage=''">
+    <div v-if="currentImage" class="model max-sm:p-4"  @click="currentImage=''">
         <Icon @click="currentImage=''" icon="humbleicons:times" class="absolute top-6 right-6 text-white text-4xl cursor-pointer hover:text-red-500" />
         <img @click="$event.stopPropagation()" :src="currentImage">
     </div>
@@ -28,6 +28,7 @@ section {
         object-fit: cover;
         border: 8px solid white;
         box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+        
     }
 
     .heading {
@@ -38,11 +39,13 @@ section {
     }
 
     .model {
-        @apply fixed inset-0 bg-black/90 grid place-items-center;
+        @apply fixed inset-0 bg-black/90 grid place-items-center ;
+        z-index: 51;
+
     }
 
     .model img {
-        max-width: 1000px;
+        width: min(100%,1000px);
         aspect-ratio: 7/5;
         margin: 0 auto;
     }

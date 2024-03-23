@@ -5,7 +5,7 @@ import { ref } from 'vue';
 const toggleNav = ref(false);
 </script>
 <template>
-    <header class="sticky top-0 bg-amber-100">
+    <header class="sticky top-0 bg-amber-100 z-50">
         <nav class="flex justify-between max-w-[1400px] mx-auto py-4 sm:py-2 px-4 items-center">
             <div class="logo flex gap-3 sm:gap-6 items-center text-primary">
                 <img class="size-10 sm:size-16 mix-blend-darken" src="/src/assets/logo 2.jpeg" alt="">

@@ -13,12 +13,12 @@ import { Icon } from "@iconify/vue";
             <div class="grid place-items-center">
                 <div class="grid content-center text-amber-50">
                     <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
-                    <div class="text-lg">
+                    <div class="sm:text-lg">
                         <p class="leading-[2.1]">Little Angel School, Kerakat, Jaunpur</p>
                         <p class="">Uttar Paradesh (India)</p>
                     </div>
-                    <a class="text-lg mt-2" href="tel:+919450083483" target="_blank">+91-9450083483</a>
-                    <a class="text-lg mt-1" href="mailto:littleangelschoolkkt@gmail.com"
+                    <a class="sm:text-lg mt-2" href="tel:+919450083483" target="_blank">+91-9450083483</a>
+                    <a class="sm:text-lg mt-1" href="mailto:littleangelschoolkkt@gmail.com"
                         target="_blank">littleangelschoolkkt@gmail.com</a>
                 </div>
             </div>

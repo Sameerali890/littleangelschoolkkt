@@ -11,14 +11,15 @@ const toggleNav = ref(false);
                 <img class="size-10 sm:size-16 mix-blend-darken" src="/src/assets/logo 2.jpeg" alt="">
                 <h2 class="font-bold text-xl sm:text-2xl">Little Angel School</h2>
             </div>
-            <div class="links flex gap-6" :class="{'open':toggleNav}">
+            <div class="links flex gap-6" @click="toggleNav = false" :class="{'open':toggleNav}">
                 <a href="#">Home</a>
                 <a href="#about">About Us</a>
                 <a href="#gallery">Gallery</a>
                 <a href="#admission">Admission</a>
                 <a href="#contact">Contact Us</a>
             </div>
-            <Icon icon="fa6-solid:bars" class="text-2xl md:hidden" @click="toggleNav = !toggleNav" />
+            <Icon v-if="!toggleNav" icon="fa6-solid:bars" class="text-2xl md:hidden" @click="toggleNav = true" />
+            <Icon v-else icon="iconamoon:sign-times-bold" class="text-4xl md:hidden" @click="toggleNav = false" />
         </nav>
     </header>
 </template>
